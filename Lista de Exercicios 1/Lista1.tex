@@ -1,0 +1,283 @@
+\documentclass[a4paper, 12pt, addpoints]{exam}
+\usepackage{IfbaListas}
+%==============================================================
+\NumList{1} %NÚMERO DA LISTA
+\Assunto{Lógica Proposicional}
+%==============================================================
+\input{InfGerais} %CARREGA AS INFORMAÇÕES GERAIS DO PROFESSOR, ESCOLA ETC
+%==============================================================
+
+%COMEÇO DO DOCUMENTO
+\begin{document}
+\info\vspace{-1 cm} %Imprime as informações do cabeçalho programada no pacote 
+% inicia a gravacao da resposta no arquivo "ans" cujo nome externo é gabarito 
+\Opensolutionfile{ans}[Gabarito]
+%*****************************************************************************
+\begin{questions}%COMEÇA O AMBIENTE DE QUESTÕES
+  \question São dadas diversas formas de negação para cada uma das proposições a seguir.
+  Quais estão corretas?
+
+  \begin{enumerate}[a)]
+    \item  A resposta é 2 ou 3.
+          \begin{enumerate}[i.]
+            \item A resposta é nem 2 nem 3.
+            \item A resposta não é 2 ou não é 3.
+            \item A resposta não é 2 e não é 3.
+          \end{enumerate}
+    \item Pepinos são verdes e têm sementes.
+          \begin{enumerate}[i.]
+            \item Pepinos não são verdes e não têm sementes.
+            \item Pepinos não são verdes ou não têm sementes.
+            \item Pepinos são verdes e não têm sementes.
+          \end{enumerate}
+    \item $ 2 < 7 $ e $3$ é ímpar.
+          \begin{enumerate}
+            \item $2 > 7$ e 3 é par.
+            \item $2 \geq 7$ e 3 é par.
+            \item $2 \geq  7$ ou 3 é ímpar.
+            \item $2 \geq  7$ ou 3 é par.
+          \end{enumerate}
+  \end{enumerate}
+
+  \begin{resp}~
+    -
+  \end{resp}
+
+  \question  Qual é o valor lógico (V ou F) de cada uma das proposições a seguir?
+  \begin{multicols}{2}
+    \begin{enumerate}[a)]
+      \item Se 8 for ímpar, então 6 é ímpar.
+      \item Se 8 for par, então 6 é ímpar.
+      \item Se 8 for ímpar, então 6 é par.
+      \item Se 8 for ímpar e 6 for par, então 8 < 6.
+    \end{enumerate}
+  \end{multicols}
+  \begin{resp}
+    -
+  \end{resp}
+
+  \question  Encontre o antecedente e o consequente de cada uma das proposições a seguir:
+
+  \begin{enumerate}[a)]
+    \item O crescimento sadio de plantas é consequência de quantidade suficiente de
+          água.
+    \item O aumento da disponibilidade de informação é uma condição necessária para
+          um maior desenvolvimento tecnológico.
+    \item Serão introduzidos erros apenas se forem feitas modificações no programa.
+    \item A economia de energia para aquecimento implica boa insulação ou vedação
+          de todas as janelas.
+  \end{enumerate}
+
+  \begin{resp}
+    -
+    %  \begin{multicols}{4}
+    %    \begin{enumerate}[a)]
+    %      \item 2
+    %      \item 5/3
+    %      \item 0
+    %      \item 1
+    %    \end{enumerate}
+    %  \end{multicols}
+  \end{resp}
+
+  \question Escreva a negação de cada fbf a seguir:
+  \begin{enumerate}[a)]
+    \item Se a comida é boa, então o serviço é excelente.
+    \item Ou a comida é boa, ou o serviço é excelente.
+    \item Ou a comida é boa e o serviço é excelente, ou então está caro.
+    \item Nem a comida é boa, nem o serviço é excelente.
+    \item Se é caro, então a comida é boa e o serviço é excelente.
+  \end{enumerate}
+
+  \begin{resp}~
+    -
+  \end{resp}
+
+  \question Sejam A, B e C as seguintes proposições:
+  \begin{enumerate}[A -]
+    \item Rosas são vermelhas.
+    \item Violetas são azuis.
+    \item Açúcar é doce.
+  \end{enumerate}
+
+  Escreva as proposições compostas a seguir em notação simbólica.
+
+  \begin{enumerate}[a)]
+    \item Rosas são vermelhas e violetas são azuis.
+    \item Rosas são vermelhas e, ou bem violetas são, ou bem açúcar é doce.
+    \item Sempre que violetas são azuis, rosas são vermelhas e açúcar é doce.
+    \item Rosas são vermelhas apenas se violetas não forem azuis ou se açúcar for
+          amargo.
+    \item Rosas são vermelhas e, se açúcar for amargo, então ou violetas não são azuis
+          ou açúcar é doce.
+  \end{enumerate}
+
+  \begin{resp}~
+    -
+  \end{resp}
+
+
+  \question Use A, B e C como no exercício 5 para escrever as seguintes proposições compostas
+  em português:
+  \begin{multicols}{2}
+    \begin{enumerate}[a)]
+      \item $B \vee C'$
+      \item $B' \vee (A \rightarrow C)$
+      \item $(C \wedge A') \leftrightarrow B$
+      \item $C \wedge (A' \leftrightarrow B)$
+      \item $(B \wedge C')' \leftrightarrow A$
+      \item $A \vee (B \wedge C')$
+      \item $(A \vee B) \wedge C'$
+    \end{enumerate}
+  \end{multicols}
+
+  \begin{resp}~
+    -
+  \end{resp}
+
+  \question Escreva cada uma das proposições compostas a seguir em notação simbólica usando
+  letras de proposição para denotar as componentes.
+
+  \begin{enumerate}[a)]
+    \item Se os preços subirem, então haverá muitas casas para vender e elas serão
+          caras; mas se as casas não forem caras, então, ainda assim, haverá muitas casas para
+          vender.
+    \item Tanto ir dormir como ir nadar é uma condição suficiente para a troca de roupa;
+          no entanto, mudar a roupa não significa que se vai nadar.
+    \item Vai chover ou nevar, mas não ambos.
+    \item Se Jane vender ou perder, vai ficar cansada.
+    \item Ou Jane irá vender ou, se perder, ela ficará cansada.
+  \end{enumerate}
+
+  \begin{resp}~
+    -
+  \end{resp}
+
+  \question Escreva cada uma das proposições compostas a seguir em notação simbólica usando
+  letras de proposição para denotar as componentes.
+
+  \begin{enumerate}[a)]
+    \item Se o cavalo estiver descansado, o cavaleiro vencerá.
+    \item O cavaleiro vencerá apenas se o cavalo estiver descansado e a armadura for
+          forte.
+    \item Um cavalo descansado é uma condição necessária para o cavaleiro vencer.
+    \item O cavaleiro vencerá se, e somente se, a armadura for forte.
+    \item Uma condição suficiente para o cavaleiro vencer é que a armadura seja forte
+          ou o cavalo esteja descansado.
+  \end{enumerate}
+
+  \begin{resp}~
+    -
+  \end{resp}
+
+  \question Construa tabelas-verdade para as fbfs a seguir. Note quaisquer tautologias,
+  contradições e contingências.
+  \begin{multicols}{2}
+    \begin{enumerate}[a)]
+      \item $(A \rightarrow B) \leftrightarrow A' \vee B$
+      \item $(A \wedge B) \vee C \rightarrow A \wedge (B \vee C)$
+      \item $A \wedge (A' \vee B')'$
+      \item $A \wedge B \rightarrow A'$
+      \item $(A \rightarrow B) \rightarrow [(A \vee C) \rightarrow ( B \vee C)]$
+      \item $A \rightarrow (B \rightarrow A)$
+      \item $A \wedge B \leftrightarrow B' \vee A'$
+      \item $(A \vee B') \wedge (A \wedge B)'$
+      \item $[(A \vee B) \wedge C'] \rightarrow A' \vee C$
+    \end{enumerate}
+  \end{multicols}
+  \begin{resp}~
+    -
+  \end{resp}
+
+  \question Nas sentenças a seguir que regra de inferência é ilustrada pelo argumento dado:
+  \begin{enumerate}[a)]
+    \item Se Martins é o autor, então o livro é de ficção. Mas o livro não é de ficção. Portanto,
+          Martins não é o autor.
+    \item Se a firma falir, todos os seus ativos têm que ser confiscados. A firma faliu. Segue
+          que todos os seus bens têm que ser confiscados.
+    \item O cachorro tem um pêlo sedoso e adora latir. Portanto, o cachorro adora latir.
+    \item Se Paulo é um bom nadador, então ele é um bom corredor. Se Paulo é um bom
+          corredor, então ele é um bom ciclista. Portanto, se Paulo é um bom nadador, então ele
+          é um bom ciclista.
+  \end{enumerate}
+
+  \begin{resp}~
+    -
+  \end{resp}
+
+  \question Nas fbfs a seguir  use lógica proposicional para provar que o argumento é
+  válido:
+
+  \begin{enumerate}[a)]
+    \item $A' \wedge (B \rightarrow A) \rightarrow B'$
+    \item $(A \rightarrow B) \wedge [A \rightarrow (B \rightarrow C)] \rightarrow (A \rightarrow C)$
+    \item $[(C \rightarrow D) \rightarrow C] \rightarrow [(C \rightarrow D) \rightarrow D]$
+    \item $A' \wedge (A \vee B) \rightarrow B$
+    \item $[A \rightarrow (B \rightarrow C)] \wedge (A \vee D') \wedge B \rightarrow (D \rightarrow C)$
+    \item $(A' \rightarrow B') \wedge B \wedge (A \rightarrow C) \rightarrow C$
+    \item $(A \rightarrow B) \wedge [B \rightarrow (C \rightarrow D)] \wedge [A \rightarrow (B \rightarrow C)] \rightarrow (A \rightarrow D)$
+    \item $[A \rightarrow (B \rightarrow C)] \rightarrow [B \rightarrow (A \rightarrow C)]$
+    \item $(A \wedge B) \rightarrow (A \rightarrow B')'$
+  \end{enumerate}
+
+  \begin{resp}~
+    -
+  \end{resp}
+
+
+  \question Nas sentenças a seguir use lógica proposicional para provar que o argumento é
+  válido. Use as letras de proposição dadas:
+
+  \begin{enumerate}[a)]
+    \item A colheita é boa, mas não há água suficiente. Se houver muita chuva ou se não
+          houver muito sol, então haverá água suficiente. Portanto, a colheita é boa e há muito
+          sol. C, A, V(chuva), S
+    \item Se o anúncio for bom, o volume de vendas aumentará. O anúncio é bom ou a loja
+          vai fechar. O volume de vendas não vai aumentar. Portanto a loja vai fechar. A, V, L
+    \item A Rússia era uma potência superior e, a França não era suficientemente poderosa
+          ou Napoleão fez um erro. Napoleão não fez um erro, mas, se o exército não perdeu,
+          então a França era poderosa. Portanto, o exército perdeu e a Rússia era uma potência
+          superior. R, F, N, E
+    \item Não é verdade que, se as tarifas de energia elétrica subirem, então o uso diminuirá,
+          nem é verdade que, novas usinas elétricas serão construídas ou as contas não serão
+          pagas com atraso. Portanto, o uso não vai diminuir e as contas serão pagas com atraso.
+          T, U, E, C
+    \item Se José levou as jóias ou a Sra. Krasov mentiu, então foi cometido um crime. O Sr.
+          Krasov não estava na cidade. Se um crime foi cometido, então o Sr. Krasov estava na
+          cidade. Portanto, José não levou as jóias. J, M, C, K
+  \end{enumerate}
+
+  \begin{resp}~
+    -
+  \end{resp}
+  % \question (\textbf{Problema do circuito RL em série})
+  % No circuito da Fig. \ref{Fig:Circ} abaixo, temos uma associação em série de um resistor (símbolo $R$) e um indutor (símbolo $L$). Da segunda lei de Kirchhoff (lei das voltagens) e do estudo das equações diferenciais, pode-se mostrar que a corrente $i$ no circuito é dada por
+  % \begin{equation}
+  %   i(t)=\dfrac{E}{R}+ce^{-\left(\frac{R}{L}\right)t}\label{eq.resistor}
+  % \end{equation}
+  % onde $E$ é uma bateria de voltagem fixa, $c$ é uma constante real e $t$ é o tempo.
+  % \begin{figure}[hbt]
+  %   \includegraphics[scale=0.65]{Figs/L1/Resistor.png}\label{fig-resistorL1}
+  %   \caption{Representação de um circuito}
+  %   \label{Fig:Circ}
+  % \end{figure}\\
+  % \textbf{Exercício 1:} Se uma bateria de 12 volts é conectada a um circuito em série (como na figura acima) no qual o indutor é de 1/2 henry e o resistor é de 10 ohms, determine o valor da constante $c$ e a corrente $i(t)$. Considere a corrente inicial e o tempo inicial iguais a zero.\\
+  % \textbf{Exercício 2:} Determine $\displaystyle\lim_{t\to \infty} i(t)$, sendo $i(t)$ da equação (\ref{eq.resistor})\\
+  % \textbf{Exercício 3-Observações:}
+  % \begin{enumerate}[a)]
+  %   \item O que acontece com o termo $ce^{-\left(\frac{R}{L}\right)t}$ quanto $\displaystyle {t\to \infty}$? \textbf{Explique!} Tal termo é usualmente denominado \textbf{corrente transitória}. \textbf{Explique!}
+  %   \item A razão $E/R$ é chamada \textbf{corrente estacionária}. \textbf{Explique!}
+  %   \item Após um longo período, a corrente no circuito é governada praticamente pela lei de Ohm $E= Ri $. \textbf{Explique!}
+  % \end{enumerate}
+  % \begin{resp}
+  %   -
+  % \end{resp}
+\end{questions}
+
+\vspace{1cm}
+% \begin{center}
+%  \section*{Gabarito}
+%\end{center}
+\Closesolutionfile{ans}% finaliza a gravação das respostas
+% \input{Gabarito} %imprime as soluções
+\end{document}
