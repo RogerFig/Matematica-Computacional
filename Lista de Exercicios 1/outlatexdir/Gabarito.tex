@@ -1,66 +1,623 @@
 \begin{Gabarito}{1}
 ~
-    -
+    \begin{multicols}{4}
+          \begin{enumerate}[a)]
+            \item i e iii
+            \item ii
+            \item iv
+          \end{enumerate}
+        \end{multicols}
   
 \end{Gabarito}
 \begin{Gabarito}{2}
-    -
+~
+    \begin{multicols}{4}
+      \begin{enumerate}[a)]
+        \item V
+        \item F
+        \item V
+        \item V
+      \end{enumerate}
+    \end{multicols}
   
 \end{Gabarito}
 \begin{Gabarito}{3}
-    -
-    %  \begin{multicols}{4}
-    %    \begin{enumerate}[a)]
-    %      \item 2
-    %      \item 5/3
-    %      \item 0
-    %      \item 1
-    %    \end{enumerate}
-    %  \end{multicols}
+~
+    %\begin{multicols}{4}
+        \begin{enumerate}[a)]
+          \item \textbf{antecedente:} água suficiente \\ \textbf{consequente:} crescimento saudável da planta
+          \item \textbf{antecedente:} maior desenvolvimento tecnológico \\ \textbf{consequente:} aumento da disponibilidade da informação
+          \item \textbf{antecedente:} erros serão introduzidos \\ \textbf{consequente:} haver uma modificação no programa
+          \item \textbf{antecedente:} economia de energia \\ \textbf{consequente:} boa insulação ou vedação de todas as janelas
+        \end{enumerate}
+     % \end{multicols}
   
 \end{Gabarito}
 \begin{Gabarito}{4}
 ~
-    -
+       %\begin{multicols}{1}
+        \begin{enumerate}[a)]
+          \item A comida é boa mas o serviço é ruim.
+          \item A comida e o serviço são ruins.
+          \item A comida é ruim ou o serviço é ruim, mas o preço é baixo.
+          \item A comida é boa ou o serviço é excelente.
+          \item O preço é alto, mas a comida é ruim ou o serviço é ruim.
+        \end{enumerate}
+      %\end{multicols}
   
 \end{Gabarito}
 \begin{Gabarito}{5}
 ~
-    -
+    \begin{multicols}{3}
+      \begin{enumerate}[a)]
+        \item $A \wedge B$
+        \item $A \wedge (B \vee C)$
+        \item $B \rightarrow (A \wedge C)$
+        \item $A \rightarrow (B' \vee C')$
+        \item $A \wedge [C' \rightarrow (B' \vee C)]$
+      \end{enumerate}
+    \end{multicols}
+    %\[ A \wedge (B \rightarrow C) \wedge \left[ (A \wedge B) \rightarrow (D \vee C') \right] \wedge B \rightarrow D \]
   
 \end{Gabarito}
 \begin{Gabarito}{6}
 ~
-    -
+
+      \begin{enumerate}[a)]
+        \item Violetas são azuis ou açúcar é amargo.
+        \item Violetas não são azuis ou, se rosas são vermelhas então o açúcar é doce.
+        \item O açúcar é doce e rosas não são vermelhas se, e somente se, violetas são
+        azuis.
+        \item O açúcar é doce e, rosas não serem vermelhas é uma condição necessária e
+        suficiente para violetas serem azuis.
+        \item Se é falso que violetas são azuis e que açúcar é amargo, então rosas são
+        vermelhas.
+        \item As rosas são vermelhas ou, violetas são azuis e o açúcar é amargo.
+        \item As rosas são vermelhas ou violetas são azuis, mas o açúcar é amargo.
+      \end{enumerate}
+
   
 \end{Gabarito}
 \begin{Gabarito}{7}
 ~
-    -
+    \begin{enumerate}[a)]
+      \item A - Preços subirem; B - Haverá muitas casas para vender; C - As casas serão caras; \\ $ A \rightarrow (B \wedge C) \wedge (C' \rightarrow B) $
+      \item A - Ir dormir; B - Ir nadar; C - Trocar de roupa \\ $[(A \vee B) \rightarrow C] \wedge (C \rightarrow B)'$
+      \item A - Vai chover; B - Vai nevar. \\ $(A \vee B) \wedge (A \wedge B)'$ ou $ A \veebar B $
+      \item A - Jane vai vender; B - Jane vai perder; C - Jane vai ficar cansada. \\ $(A \vee B) \rightarrow C$
+      \item A - Jane vai vender; B - Jane vai perder; C - Jane vai ficar cansada. \\ $A \vee (B \rightarrow C)$
+
+    \end{enumerate}
   
 \end{Gabarito}
 \begin{Gabarito}{8}
 ~
-    -
+
+    Prop.: A - Cavalo estiver descansado; B - Cavaleiro vencerá; C - Armadura é forte
+
+    \begin{multicols}{4}
+    \begin{enumerate}[a)]
+      \item $ A \rightarrow B$
+      \item $B \rightarrow (A \wedge C)$
+      \item $B \rightarrow A$
+      \item $B \leftrightarrow C$
+      \item $(C \vee A) \rightarrow B$
+    \end{enumerate}
+  \end{multicols}
   
 \end{Gabarito}
 \begin{Gabarito}{9}
 ~
-    -
+
+    \begin{enumerate}[a)]
+      \item Tautologia \\
+      \begin{tabular}{|c|c|c|c|c|c|c|}
+        \hline
+        A & B & $ A' $ & $A \rightarrow B$ & $A' \lor B$ & $(A \rightarrow B) \leftrightarrow \lnot A \lor B$ \\
+        \hline
+        V & V & F & V & V & V \\
+        V & F & F & F & F & V \\
+        F & V & V & V & V & V \\
+        F & F & V & V & V & V \\
+        \hline
+      \end{tabular}
+
+      \item Contingência \\
+      \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+        \hline
+        A & B & C & $(A \land B)$ & $(A \land B) \lor C$ & $(B \lor C)$ & $A \land (B \lor C)$ & $(A \land B) \lor C \rightarrow A \land (B \lor C)$ \\
+        \hline
+        V & V & V & V & V & V & V & V \\
+        V & V & F & V & V & V & V & V \\
+        V & F & V & F & V & V & V & V \\
+        V & F & F & F & F & F & F & V \\
+        F & V & V & F & V & V & F & F \\
+        F & V & F & F & F & V & F & V \\
+        F & F & V & F & V & V & F & F \\
+        F & F & F & F & F & F & F & V \\
+        \hline
+      \end{tabular}
+
+      \item Contingência \\
+      \begin{tabular}{|c|c|c|c|c|c|c|}
+        \hline
+        A & $A'$ & $B'$ & $A' \lor B'$ & $(A' \lor B')'$ & $A \land (A' \lor B')'$ \\
+        \hline
+        V & F & F & F & V & V \\
+        V & F & V & V & F & F \\
+        F & V & F & V & F & F \\
+        F & V & V & V & F & F \\
+        \hline
+      \end{tabular}
+
+      \item Contingência \\
+      \begin{tabular}{|c|c|c|c|c|c|}
+        \hline
+        A & B & $A'$ & $A \land B$ & $(A \land B) \rightarrow A'$ \\
+        \hline
+        V & V & F & V & F \\
+        V & F & F & F & V \\
+        F & V & V & F & V \\
+        F & F & V & F & V \\
+        \hline
+      \end{tabular}
+
+      \item Tautologia \\
+      \resizebox{0.94\textwidth}{!}{%
+      \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+        \hline
+        A & B & C & $(A \rightarrow B)$ & $(A \lor C)$ & $(B \lor C)$ & $[(A \lor C) \rightarrow (B \lor C)]$ & $(A \rightarrow B) \rightarrow [(A \lor C) \rightarrow (B \lor C)]$ \\
+        \hline
+        V & V & V & V & V & V & V & V \\
+        V & V & F & V & V & V & V & V \\
+        V & F & V & F & V & V & V & V \\
+        V & F & F & F & V & F & F & V \\
+        F & V & V & V & V & V & V & V \\
+        F & V & F & V & F & V & V & V \\
+        F & F & V & V & V & V & V & V \\
+        F & F & F & V & F & F & F & V \\
+        \hline
+      \end{tabular}%
+      }
+      \item Tautologia \\
+      \begin{tabular}{|c|c|c|c|}
+        \hline
+        A & B & $(B \rightarrow A)$ & $A \rightarrow (B \rightarrow A)$ \\
+        \hline
+        V & V & V & V \\
+        V & F & V & V \\
+        F & V & F & V \\
+        F & F & V & V \\
+        \hline
+      \end{tabular}
+
+      \item Contradição \\
+      \begin{tabular}{|c|c|c|c|c|c|c|c|}
+        \hline
+        A & B & $A'$ & $B'$ & $A \land B$ & $B' \lor A'$ & $A \land B \leftrightarrow B' \lor A'$ \\
+        \hline
+        V & V & F & F & V & F & F \\
+        V & F & F & V & F & V & F \\
+        F & V & V & F & F & V & F \\
+        F & F & V & V & F & V & F \\
+        \hline
+      \end{tabular}
+
+      \item Contingência \\
+      \begin{tabular}{|c|c|c|c|c|c|c|c|}
+        \hline
+        A & B & $B'$ & $(A \lor B')$ & $(A \land B)$ & $(A \land B)'$ & $(A \lor B') \land (A \land B)'$ \\
+        \hline
+        V & V & F & V & V & F & F \\
+        V & F & V & V & F & V & V \\
+        F & V & F & F & F & V & F \\
+        F & F & V & V & F & V & V \\
+        \hline
+      \end{tabular}
+
+      \item Contingência \\
+      \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+        \hline
+        A & B & C & $A'$ & $C'$ & $(A \lor B)$ & $[(A \lor B) \land C']$ & $A' \lor C$ & $[(A \lor B) \land C'] \rightarrow A' \lor C$ \\
+        \hline
+        V & V & V & F & F & V & F & V & V \\
+        V & V & F & F & V & V & V & F & F \\
+        V & F & V & F & F & V & F & V & V \\
+        V & F & F & F & V & V & V & F & F \\
+        F & V & V & V & F & V & F & V & V \\
+        F & V & F & V & V & V & V & V & V \\
+        F & F & V & V & F & F & F & V & V \\
+        F & F & F & V & V & F & F & V & V \\
+        \hline
+      \end{tabular}
+    \end{enumerate}
   
 \end{Gabarito}
 \begin{Gabarito}{10}
 ~
-    -
+
+    \begin{multicols}{2}
+      \begin{enumerate}[a)]
+        \item Modus tollens
+        \item Modus Ponens
+        \item Simplificação
+        \item Silogismo hipotético
+      \end{enumerate}
+    \end{multicols}
   
 \end{Gabarito}
 \begin{Gabarito}{11}
 ~
-    -
+
+    \begin{enumerate}[a)]
+      \item $A' \wedge (B \rightarrow A) \rightarrow B'$
+      \begin{multicols}{2}
+
+        \begin{enumerate}[1.]
+          \item $A'$
+          \item $B \rightarrow A$
+          \item $\boldsymbol{B'}$
+        \end{enumerate}
+
+        \columnbreak
+
+        \begin{enumerate}[\ding{32}]
+          \item (hip)
+          \item (hip)
+          \item \textbf{(1,2,modus tollens)}
+        \end{enumerate}
+
+        \end{multicols}
+
+      \item $(A \rightarrow B) \wedge [A \rightarrow (B \rightarrow C)] \rightarrow (A \rightarrow C)$ \\
+      \begin{multicols}{2}
+
+        \begin{enumerate}[1.]
+          \item $A \rightarrow B$
+          \item $A \rightarrow (B \rightarrow C)$
+          \item $A$
+          \item $B$
+          \item $B \rightarrow C$
+          \item $\boldsymbol{C}$
+        \end{enumerate}
+
+        \columnbreak
+
+        \begin{enumerate}[\ding{32}]
+          \item (hip)
+          \item (hip)
+          \item (hip da conclusão)
+          \item (1, 3, modus ponens)
+          \item (2, 3, modus ponens)
+          \item \textbf{(4, 5, modus ponens)}
+        \end{enumerate}
+
+      \end{multicols}
+
+      \item $[(C \rightarrow D) \rightarrow C] \rightarrow [(C \rightarrow D) \rightarrow D]$ \\
+      \begin{multicols}{2}
+
+        \begin{enumerate}[1.]
+          \item $(C \rightarrow D) \rightarrow C$
+          \item $C \rightarrow D$
+          \item $C$
+          \item $\boldsymbol{D}$
+        \end{enumerate}
+
+        \columnbreak
+
+        \begin{enumerate}[\ding{32}]
+          \item (hip)
+          \item (hip da conclusão)
+          \item (1, 2, modus ponens)
+          \item \textbf{(2, 3, modus ponens)}
+        \end{enumerate}
+
+      \end{multicols}
+
+      \item $A' \wedge (A \vee B) \rightarrow B$ \\
+      \begin{multicols}{2}
+
+        \begin{enumerate}[1.]
+          \item $A'$
+          \item $A \vee B$
+          \item $A'' \vee B$
+          \item $A' \rightarrow B$
+          \item $\boldsymbol{B}$
+        \end{enumerate}
+
+        \columnbreak
+
+        \begin{enumerate}[\ding{32}]
+          \item (hip)
+          \item (hip)
+          \item (2, dupla negação)
+          \item (3, condicional)
+          \item \textbf{(1, 4, modus ponens)}
+        \end{enumerate}
+
+      \end{multicols}
+
+      \item $[A \rightarrow (B \rightarrow C)] \wedge (A \vee D') \wedge B \rightarrow (D \rightarrow C)$ \\
+      \begin{multicols}{2}
+
+        \begin{enumerate}[1.]
+          \item $A \rightarrow (B \rightarrow C)$
+          \item $A \vee D'$
+          \item $B$
+          \item $D$
+          \item $A$
+          \item $B \rightarrow C$
+          \item $\boldsymbol{C}$
+        \end{enumerate}
+
+        \columnbreak
+
+        \begin{enumerate}[\ding{32}]
+          \item (hip)
+          \item (hip)
+          \item (hip)
+          \item (hip da conclusão)
+          \item (2, 4, silogismo disjuntivo)
+          \item (1, 5, modus ponens)
+          \item \textbf{(3, 6, modus ponens)}
+        \end{enumerate}
+
+      \end{multicols}
+
+      \item $(A' \rightarrow B') \wedge B \wedge (A \rightarrow C) \rightarrow C$ \\
+      \begin{multicols}{2}
+
+        \begin{enumerate}[1.]
+          \item $A' \rightarrow B'$
+          \item $B$
+          \item $A \rightarrow C$
+          \item $A$
+          \item $\boldsymbol{C}$
+        \end{enumerate}
+
+        \columnbreak
+
+        \begin{enumerate}[\ding{32}]
+          \item (hip)
+          \item (hip)
+          \item (hip)
+          \item (1, 2, modus tollens)
+          \item \textbf{(3, 4, modus ponens)}
+        \end{enumerate}
+
+      \end{multicols}
+
+      \item $(A \rightarrow B) \wedge [B \rightarrow (C \rightarrow D)] \wedge [A \rightarrow (B \rightarrow C)] \rightarrow (A \rightarrow D)$ \\
+      \begin{multicols}{2}
+
+        \begin{enumerate}[1.]
+          \item $A \rightarrow B$
+          \item $B \rightarrow (C \rightarrow D)$
+          \item $A \rightarrow (B \rightarrow C)$
+          \item $A$
+          \item $B$
+          \item $B \rightarrow C$
+          \item $C$
+          \item $C \rightarrow D$
+          \item $\boldsymbol{D}$
+        \end{enumerate}
+
+        \columnbreak
+
+        \begin{enumerate}[\ding{32}]
+          \item (hip)
+          \item (hip)
+          \item (hip)
+          \item (hip)
+          \item (1, 4, modus ponens)
+          \item (3, 4, modus ponens)
+          \item (5, 6, modus ponens)
+          \item (2, 5, modus ponens)
+          \item \textbf{(7, 8, modus ponens)}
+        \end{enumerate}
+
+      \end{multicols}
+
+      \item $[A \rightarrow (B \rightarrow C)] \rightarrow [B \rightarrow (A \rightarrow C)]$ \\
+      \begin{multicols}{2}
+
+        \begin{enumerate}[1.]
+          \item $A \rightarrow (B \rightarrow C)$
+          \item $B$
+          \item $A$
+          \item $B \rightarrow C$
+          \item $\boldsymbol{C}$
+        \end{enumerate}
+
+        \columnbreak
+
+        \begin{enumerate}[\ding{32}]
+          \item (hip)
+          \item (hip da conclusão)
+          \item (hip da hipótese da conclusão)
+          \item (1, 3, modus ponens)
+          \item \textbf{(2, 4, modus ponens)}
+        \end{enumerate}
+
+      \end{multicols}
+
+      \item $(A \wedge B) \rightarrow (A \rightarrow B')'$ \\
+      \begin{multicols}{2}
+
+        \begin{enumerate}[1.]
+          \item $A \wedge B$
+          \item $A'' \wedge B''$
+          \item $(A' \lor B')'$
+          \item $\boldsymbol{(A \rightarrow B')'}$
+        \end{enumerate}
+
+        \columnbreak
+
+        \begin{enumerate}[\ding{32}]
+          \item (hip)
+          \item (1, dupla negação)
+          \item (2, De Morgan)
+          \item \textbf{(3, condicional)}
+        \end{enumerate}
+
+      \end{multicols}
+
+    \end{enumerate}
   
 \end{Gabarito}
 \begin{Gabarito}{12}
 ~
-    -
+    \begin{enumerate}[a)]
+      \item $[(C \land A') \land ((V \lor S') \rightarrow A)] \rightarrow (C \lor S)$ \\
+      \begin{multicols}{2}
+
+        \begin{enumerate}[1.]
+          \item $C \land A'$
+          \item $(V \lor S') \rightarrow A)$
+          \item $C$
+          \item $A'$
+          \item $(V \lor S')$
+          \item $V' \land (S')'$
+          \item $(S')'$
+          \item $S$
+          \item $\boldsymbol{C \land S}$
+        \end{enumerate}
+
+        \columnbreak
+
+        \begin{enumerate}[\ding{32}]
+          \item (hip)
+          \item (hip)
+          \item (hip)
+          \item (1, simplificação)
+          \item (2,4, modus tollens)
+          \item (5, De Morgan)
+          \item (6, simplificação)
+          \item (7, dupla negação)
+          \item \textbf{(3, 8, conjunção)}
+        \end{enumerate}
+
+      \end{multicols}
+
+      \item $(A\rightarrow V) \land (A \lor L) \land V' \rightarrow L $
+      \begin{multicols}{2}
+
+        \begin{enumerate}[1.]
+          \item $A\rightarrow V$
+          \item $A \lor L$
+          \item $V'$
+          \item $A'$
+          \item $(A')' \lor L$
+          \item $A' \rightarrow L$
+          \item $\boldsymbol{L}$
+        \end{enumerate}
+
+        \columnbreak
+
+        \begin{enumerate}[\ding{32}]
+          \item (hip)
+          \item (hip)
+          \item (hip)
+          \item (1,3, modus tollens)
+          \item (5, dupla negação)
+          \item (5, condicional)
+          \item \textbf{(4, 6, modus ponnens)}
+        \end{enumerate}
+
+      \end{multicols}
+
+      \item $[R \land (F' \lor N)] \land N' \land (E'\rightarrow F) \rightarrow (E \land R)$ \\
+      \begin{multicols}{2}
+
+        \begin{enumerate}[1.]
+          \item $R \land (F' \lor N)$
+          \item $N'$
+          \item $E'\rightarrow F$
+          \item $R$
+          \item $F' \lor N$
+          \item $F' \rightarrow N$
+          \item $E' \rightarrow N$
+          \item $(E')'$
+          \item $E$
+          \item $\boldsymbol{E \land R}$
+        \end{enumerate}
+
+        \columnbreak
+
+        \begin{enumerate}[\ding{32}]
+          \item (hip)
+          \item (hip)
+          \item (hip)
+          \item (1, simplificação)
+          \item (1, simplificação)
+          \item (5, condicional)
+          \item (3,6, silogismo hipotético)
+          \item (2,7, modus tollens)
+          \item (8, dupla negação)
+          \item \textbf{(4, 6, modus ponnens)}
+        \end{enumerate}
+
+      \end{multicols}
+
+      \item $(T \rightarrow U)' \land (E \lor C')' \rightarrow (U' \land C)$ \\
+      \begin{multicols}{2}
+
+        \begin{enumerate}[1.]
+          \item $(T \rightarrow U)'$
+          \item $(E \lor C')'$
+          \item $(T' \lor U)'$
+          \item $(T')' \land U'$
+          \item $E' \land (C')'$
+          \item $U'$
+          \item $(C')'$
+          \item $C$
+          \item $\boldsymbol{U' \land C}$
+        \end{enumerate}
+
+        \columnbreak
+
+        \begin{enumerate}[\ding{32}]
+          \item (hip)
+          \item (hip)
+          \item (1, condicional)
+          \item (3, lei de Morgan)
+          \item (2, lei de Morgan)
+          \item (4, simplificação)
+          \item (5, simplificação)
+          \item (7, dupla negação)
+          \item \textbf{(6, 8, conjunção)}
+        \end{enumerate}
+
+      \end{multicols}
+
+      \item $[(J \lor M) \rightarrow C] \land K' \land (C \rightarrow K) \rightarrow J'$
+      \begin{multicols}{2}
+
+        \begin{enumerate}[1.]
+          \item $(J \lor M) \rightarrow C$
+          \item $K'$
+          \item $C \rightarrow K$
+          \item $C'$
+          \item $(J \lor M)'$
+          \item $J' \land M'$
+          \item $\boldsymbol{J}$
+        \end{enumerate}
+
+        \columnbreak
+
+        \begin{enumerate}[\ding{32}]
+          \item (hip)
+          \item (hip)
+          \item (hip)
+          \item (2, 3, modus tollens)
+          \item (1, 4, modus tollens)
+          \item (5, lei de Morgan)
+          \item \textbf{(6, simplificação)}
+        \end{enumerate}
+
+      \end{multicols}
+
+    \end{enumerate}
   
 \end{Gabarito}
