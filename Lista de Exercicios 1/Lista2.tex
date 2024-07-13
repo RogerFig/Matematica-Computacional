@@ -1,0 +1,125 @@
+\documentclass[a4paper, 12pt, addpoints]{exam}
+\usepackage{IfbaListas}
+%==============================================================
+\NumList{2} %NÚMERO DA LISTA
+\Assunto{Lógica de Predicados}
+%==============================================================
+\input{InfGerais} %CARREGA AS INFORMAÇÕES GERAIS DO PROFESSOR, ESCOLA ETC
+%==============================================================
+
+%COMEÇO DO DOCUMENTO
+\begin{document}
+\info\vspace{-1 cm} %Imprime as informações do cabeçalho programada no pacote 
+% inicia a gravacao da resposta no arquivo "ans" cujo nome externo é gabarito 
+\Opensolutionfile{ans}[Gabarito]
+%*****************************************************************************
+\begin{questions}%COMEÇA O AMBIENTE DE QUESTÕES
+  \question Determine o valor lógico de cada uma das fbf's. Suponha o conjunto universo todos números reais.
+  \begin{multicols}{2}
+    \begin{enumerate}[a)]
+      \item $(\forall x)(|x| = x)$
+      \item $(\exists x)(x^2 = x)$
+      \item $(\exists x)(|x| = 0)$
+      \item $(\exists x)(x + 2 = x)$
+      \item $(\forall x)(x + 1 > x)$
+      \item $(\forall x)(x^2 = x)$
+      \item $(\exists x)(2x = x)$
+      \item $(\exists x)(x^2 + 3x = -2)$
+      \item $(\exists x)(x^2 + 5 = 2x)$
+      \item $(\forall x)(2x + 3x = 5x)$
+    \end{enumerate}
+\end{multicols}
+
+  \begin{resp}~
+    \begin{multicols}{4}
+          \begin{enumerate}[a)]
+            \item i e iii
+            \item ii
+            \item iv
+          \end{enumerate}
+        \end{multicols}
+  \end{resp}
+
+  \question  Determine o valor lógico de cada uma das fbf's. Suponha o conjunto universo \{2,3,4,5,6,7,8,9\}.
+  \begin{multicols}{2}
+    \begin{enumerate}[a)]
+      \item $(\forall x)(\forall y)(x + 5 < y + 12)$
+      \item $(\forall x)(\exists y)(x \cdot y \text{ não é primo})$
+      \item $(\exists y)(\forall x)(x \cdot y \text{ não é primo})$
+      \item $(\exists x)(\exists y)(x^2 > y)$
+      \item $(\forall x)(\exists y)(x^2 > y)$
+      \item $(\exists x)(\forall y)(x^2 > y)$
+    \end{enumerate}
+  \end{multicols}
+
+  \begin{resp}~
+    \begin{multicols}{4}
+      \begin{enumerate}[a)]
+        \item V
+        \item F
+        \item V
+        \item V
+      \end{enumerate}
+    \end{multicols}
+  \end{resp}
+
+  \question  Usando os símbolos predicados e quantificadores, escreva cada declaração como uma fbf predicada. O conjunto universo é o mundo inteiro.
+
+  B(x) é “x é uma bola”.
+
+  R(x) é “x é redonda”.
+
+  S(x) é “x é uma bola de futebol”
+
+  \begin{enumerate}[a)]
+    \item Todas as bolas são redondas.
+    \item Nem todas as bolas são bolas de futebol.
+    \item Todas as bolas de futebol são redondas.
+    \item Algumas bolas não são redondas.
+    \item Algumas bolas são redondas, mas as bolas de futebol não são.
+    \item Toda bola redonda é uma bola de futebol.
+    \item Se as bolas de futebol são redondas, então todas as bolas são redondas.
+  \end{enumerate}
+
+  \begin{resp}~
+    - 
+  \end{resp}
+
+  \question  Justifique cada passo na sequência de demonstração a seguir para a fbf.
+
+  \[ (\exists x)[P(x) \rightarrow Q(x)] \rightarrow [(\forall x)P(x) \rightarrow (\exists x)Q(x)] \] 
+
+  \begin{enumerate}[1.]
+    \item $(\exists x)[P(x) \rightarrow Q(x)]$
+    \item $P(a) \rightarrow Q(a) $
+    \item $(\forall x)P(x)$
+    \item $P(a)$
+    \item $Q(a)$
+    \item $(\exists x)Q(x)$
+  \end{enumerate}
+
+  \begin{resp}~
+    - 
+  \end{resp}
+
+  \question Prove que cada fbf a seguir é um argumento válido.
+
+    \begin{enumerate}[a.]
+      \item $(\forall x)P(x) \rightarrow (\forall x)[P(x) \lor Q(x)]$
+      \item $(\exists x)(\exists y)P(x, y) \rightarrow (\exists y)(\exists x)P(x, y)$
+      \item $(\forall x)P(x) \land (\exists x)[P(x)]' \rightarrow (\exists x)Q(x)$
+  \end{enumerate}
+
+  \begin{resp}~
+    - 
+  \end{resp}
+  
+\end{questions}
+
+\vspace{1cm}
+%\begin{center}
+%  \section*{Gabarito}
+%\end{center}
+%\Closesolutionfile{ans}% finaliza a gravação das respostas
+%\input{Gabarito} %imprime as soluções
+\end{document}
