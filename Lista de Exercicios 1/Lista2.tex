@@ -28,16 +28,23 @@
       \item $(\exists x)(x^2 + 5 = 2x)$
       \item $(\forall x)(2x + 3x = 5x)$
     \end{enumerate}
-\end{multicols}
+  \end{multicols}
 
   \begin{resp}~
     \begin{multicols}{4}
-          \begin{enumerate}[a)]
-            \item i e iii
-            \item ii
-            \item iv
-          \end{enumerate}
-        \end{multicols}
+      \begin{enumerate}[a)]
+        \item F
+        \item V
+        \item V
+        \item F
+        \item V
+        \item F
+        \item V
+        \item V
+        \item F
+        \item V
+      \end{enumerate}
+    \end{multicols}
   \end{resp}
 
   \question  Determine o valor lógico de cada uma das fbf's. Suponha o conjunto universo \{2,3,4,5,6,7,8,9\}.
@@ -55,8 +62,10 @@
   \begin{resp}~
     \begin{multicols}{4}
       \begin{enumerate}[a)]
-        \item V
         \item F
+        \item V
+        \item V
+        \item V
         \item V
         \item V
       \end{enumerate}
@@ -82,12 +91,22 @@
   \end{enumerate}
 
   \begin{resp}~
-    - 
+    \begin{multicols}{2}
+      \begin{enumerate}[a)]
+        \item $ (\forall x)(B(x) \rightarrow R(x)) $
+        \item $ [(\forall x)(B(x) \rightarrow S(x))]' $
+        \item $ (\forall x)(S(x) \rightarrow R(x)) $
+        \item $ (\exists x)(B(x) \land R(x)') $
+        \item $ (\exists x)(B(x) \land R(x)) \land (\forall x)(S(x) \rightarrow R(x)') $
+        \item $ (\forall x)[(B(x) \land R(x)) \rightarrow S(x)] $
+        \item $ (\forall x)(S(x) \rightarrow R(x)) \rightarrow (\forall x)(B(x) \rightarrow R(x)) $
+      \end{enumerate}
+    \end{multicols}
   \end{resp}
 
   \question  Justifique cada passo na sequência de demonstração a seguir para a fbf.
 
-  \[ (\exists x)[P(x) \rightarrow Q(x)] \rightarrow [(\forall x)P(x) \rightarrow (\exists x)Q(x)] \] 
+  \[ (\exists x)[P(x) \rightarrow Q(x)] \rightarrow [(\forall x)P(x) \rightarrow (\exists x)Q(x)] \]
 
   \begin{enumerate}[1.]
     \item $(\exists x)[P(x) \rightarrow Q(x)]$
@@ -99,27 +118,108 @@
   \end{enumerate}
 
   \begin{resp}~
-    - 
+    \begin{multicols}{2}
+      \begin{enumerate}
+        \item hip
+        \item 1, pe
+        \item hip
+        \item 3, pu
+        \item 2,4, mp
+        \item 5, ge
+      \end{enumerate}
+    \end{multicols}
   \end{resp}
 
   \question Prove que cada fbf a seguir é um argumento válido.
 
-    \begin{enumerate}[a.]
-      \item $(\forall x)P(x) \rightarrow (\forall x)[P(x) \lor Q(x)]$
-      \item $(\exists x)(\exists y)P(x, y) \rightarrow (\exists y)(\exists x)P(x, y)$
-      \item $(\forall x)P(x) \land (\exists x)[P(x)]' \rightarrow (\exists x)Q(x)$
+  \begin{enumerate}[a.]
+    \item $(\forall x)P(x) \rightarrow (\forall x)[P(x) \lor Q(x)]$
+    \item $(\exists x)(\exists y)P(x, y) \rightarrow (\exists y)(\exists x)P(x, y)$
+    \item $(\forall x)P(x) \land (\exists x)[P(x)]' \rightarrow (\exists x)Q(x)$
   \end{enumerate}
 
   \begin{resp}~
-    - 
+
+    \begin{enumerate}[a)]
+      \item $(\forall x)P(x) \rightarrow (\forall x)[P(x) \lor Q(x)]$
+            \begin{multicols}{2}
+
+              \begin{enumerate}[1.]
+                \item $(\forall x)P(x)$
+                \item $P(x)$
+                \item $P(x) \lor Q(x)$
+                \item $\boldsymbol{(\forall x)[P(x) \lor Q(x)]}$
+              \end{enumerate}
+
+              \columnbreak
+
+              \begin{enumerate}[\ding{32}]
+                \item (hip)
+                \item (1, pu)
+                \item (2, ad)
+                \item \textbf{(3, gu)}
+              \end{enumerate}
+
+            \end{multicols}
+
+      \item $(\exists x)(\exists y)P(x, y) \rightarrow (\exists y)(\exists x)P(x, y)$
+            \begin{multicols}{2}
+
+              \begin{enumerate}[1.]
+                \item $(\exists x)(\exists y)P(x, y)$
+                \item $(\exists y)P(a,y)$
+                \item $P(a,b)$
+                \item $(\exists x)P(x,b)$
+                \item $\boldsymbol{(\exists y)(\exists x)P(x, y)}$
+              \end{enumerate}
+
+              \columnbreak
+
+              \begin{enumerate}[\ding{32}]
+                \item (hip)
+                \item (1, pe)
+                \item (2, pe)
+                \item (3, ge)
+                \item \textbf{(4, ge)}
+              \end{enumerate}
+
+            \end{multicols}
+
+      \item $(\forall x)P(x) \land (\exists x)[P(x)]' \rightarrow (\exists x)Q(x)$
+            \begin{multicols}{2}
+
+              \begin{enumerate}[1.]
+                \item $(\forall x)P(x)$
+                \item $(\exists x)[P(x)]'$
+                \item $[P(a)]'$
+                \item $P(a)$
+                \item $Q(a)$
+                \item $\boldsymbol{(\exists x)Q(x)}$
+              \end{enumerate}
+
+              \columnbreak
+
+              \begin{enumerate}[\ding{32}]
+                \item (hip)
+                \item (hip)
+                \item (2, pe)
+                \item (1, pu)
+                \item (3, 4, inc)
+                \item \textbf{(5, ge)}
+              \end{enumerate}
+
+            \end{multicols}
+    \end{enumerate}
   \end{resp}
-  
+
 \end{questions}
 
+\newpage
+
 \vspace{1cm}
-%\begin{center}
-%  \section*{Gabarito}
-%\end{center}
-%\Closesolutionfile{ans}% finaliza a gravação das respostas
-%\input{Gabarito} %imprime as soluções
+\begin{center}
+  \section*{Gabarito}
+\end{center}
+\Closesolutionfile{ans}% finaliza a gravação das respostas
+\input{Gabarito} %imprime as soluções
 \end{document}
