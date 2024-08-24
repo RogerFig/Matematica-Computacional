@@ -1,0 +1,118 @@
+% ------------------------------------------------------------%
+% 2015-2021 - Emerson Ribeiro de Mello <mello@ifsc.edu.br>
+% ------------------------------------------------------------%
+% Sets aspect ratio to 4:3, and frame size to 128 mm by 96 mm
+\documentclass[aspectratio=169]{beamer}
+% Sets aspect ratio to 16:9, and frame size to 160 mm by 90 mm.
+% \documentclass[aspectratio=169]{beamer}
+% Sets aspect ratio to 16:10, and frame size to 160 mm by 100 mm.
+% \documentclass[aspectratio=1610]{beamer}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{colortbl}
+\usepackage{makecell}
+\usepackage{multicol}
+\usepackage{pifont}
+
+\definecolor{DarkCyan}{HTML}{119DA4}
+\definecolor{Asparagus}{HTML}{6DA34D}
+\definecolor{CambridgeBlue}{HTML}{8FBC94}
+\definecolor{TeaGreen}{HTML}{C5E99B}
+\definecolor{Saphire}{HTML}{4059AD}
+
+
+
+% -------------------------------------------------%
+%  Package options
+% -------------------------------------------------%
+%  002625, EEE5E9, 0D1821, ADF7B6, B6C454
+% textbgcolor   - frametitle background color. default: 0d4f4d
+% textfgcolor   - frametitle foreground color. default: ffffff
+% slidebgcolor  - slide background color. default: eef1ec
+% slidefgcolor  - slide text foreground color. default: 000000
+% authorfgcolor - author, institute and date color. default: 000000
+% itemsep - space between items (itemize, enumerate). default: 7pt
+\usepackage[textbgcolor=344966,textfgcolor=ffffff,slidebgcolor=EEE5E9,itemsep=7pt]{../0-ifscyan-modelo/beamerthemeifscyan}
+% -------------------------------------------------%
+
+% A good place to get some colors
+% https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=0d4f4d
+% cyan: #0D4F4D, light: #417b79,  dark: #002625
+% IFSC green: normal: #32A041, light: #69d26f, dark: #007013
+% IFSC red: normal: #C8191E, light: #ff5747, dark: #8f0000 
+% Other colors for textbgcolor
+% purple 4527a0, blue 0d47a1, grey 546e7a, redwine 880e4f, brown 6d4c41, yelllow (bg=#fbc02d, fg=000000)
+
+% Logo
+\pgfdeclareimage[height=.3\paperheight]{ifpilogo}{../0-ifscyan-modelo/figs/Logo-IFPI-Vertical.png}
+
+\AtBeginSection[]{
+  \begin{frame}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title}\insertsectionhead\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
+
+% -------------------------------------------------%
+%              Título 
+% -------------------------------------------------%
+\title{Matemática Computacional}
+\subtitle{Análise Combinatória}
+\author{Prof. Rogério Figueredo de Sousa}
+\institute{%
+\href{rogerio.sousa@ifpi.edu.br}{rogerio.sousa@ifpi.edu.br}%
+}%
+\date{27/08/2024}
+% -------------------------------------------------%
+
+% -------------------------------------------------%
+%  Início do documento 
+% -------------------------------------------------%
+\begin{document}
+
+\begin{frame}[plain]
+    \titlepage
+\end{frame}
+
+%\begin{frame}[plain, noframenumbering]{Licenciamento}
+%    \licenciamentoLivre
+%\end{frame}
+
+%\begin{frame}[plain, noframenumbering]{Sumário}
+%   \tableofcontents
+%\end{frame}
+
+
+\jsonp
+\lstset{
+    numbers=none,
+    escapeinside={\%*}{*)},
+}
+
+%1
+\begin{frame}{Princípio Aditivo e Multiplicativo}
+
+    Objetivos:
+
+    \begin{itemize}
+        \item Desenvolver as idéias e técnicas básicas para problemas de contagem.
+        \item Reduzir um problema grande a vários problemas pequenos, usando os Princípios Aditivo e Multiplicativo.
+    \end{itemize}
+
+\end{frame}
+
+%2
+\begin{frame}{Princípio Aditivo e Multiplicativo}
+
+    Importância:
+
+    \begin{itemize}
+        \item Desenvolver as idéias e técnicas básicas para problemas de contagem.
+        \item Reduzir um problema grande a vários problemas pequenos, usando os Princípios Aditivo e Multiplicativo.
+    \end{itemize}
+
+\end{frame}
+\end{document}

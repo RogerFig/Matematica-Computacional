@@ -95,8 +95,7 @@
 %1
 \begin{frame}{Conjuntos}
 
-    Conjunto não se define formalmente. Usa-se uma ideia intuitiva de que se trata de uma coleção de objetos, logo, informalmente, um conjunto é uma coleção desordenada
-    de zero ou mais objetos, denominados elementos do conjunto. Dizemos que um conjunto contém seus elementos.
+    Conjunto não se define formalmente. Usa-se uma ideia intuitiva de que se trata de uma coleção de objetos, logo, informalmente, um conjunto é uma coleção desordenada de zero ou mais objetos, denominados elementos do conjunto. Dizemos que um conjunto contém seus elementos.
 
     \begin{itemize}
         \item Esses objetos de um conjunto possuem alguma propriedade em comum.
@@ -118,8 +117,8 @@
     \vspace{2mm}
     Usamos chaves para indicar um conjunto.
     \begin{itemize}
-        \item Se $A = {azul, verde, branco}$, então $verde \in A$ e $preto \notin A$.
-        \item Os elementos em um conjunto não tem nenhuma ordem, de modo que ${azul, verde, branco}$ é o mesmo que ${branco, azul, verde}$.
+        \item Se $A = \{azul, verde, branco\}$, então $verde \in A$ e $preto \notin A$.
+        \item Os elementos em um conjunto não tem nenhuma ordem, de modo que $\{azul, verde, branco\}$ é o mesmo que $\{branco, azul, verde\}$.
     \end{itemize}    
 
 \end{frame}
@@ -144,9 +143,9 @@
     Conjunto infinito: exemplos:
 
     \begin{itemize}
-        \item $A={2,4,6,...}$
-        \item $B={0,1,2,3,4,...}$
-        \item $C={2,4,8,16,..}$
+        \item $A=\{2,4,6,...\}$
+        \item $B=\{0,1,2,3,4,...\}$
+        \item $C=\{2,4,8,16,..\}$
     \end{itemize}
 
     \vspace{4mm}
@@ -159,7 +158,7 @@ Ou podemos representar por uma relação de recorrência.
 
 \vspace{2mm}
 
-Temos, $A={2,4,6,...}$
+Temos, $A=\{2,4,6,...\}$
 
 \end{frame}
 
@@ -174,7 +173,7 @@ Temos, $A={2,4,6,...}$
     \end{itemize}
     
     \vspace{2mm}
-Temos, $B={0,1,2,...}$
+Temos, $B=\{0,1,2,...\}$
 
 \vspace{4mm}
 \begin{itemize}
@@ -183,7 +182,7 @@ Temos, $B={0,1,2,...}$
 \end{itemize}
 
 \vspace{2mm}
-Temos, $C={2,4,8,16...}$
+Temos, $C=\{2,4,8,16...\}$
 
 \end{frame}
 
@@ -200,11 +199,11 @@ Temos, $C={2,4,8,16...}$
 Exemplos:
 
 \begin{enumerate}
-    \item $V = { a, e, i, o, u}$
-    \item $I = {1, 3, 5, 7, 9, ...}$
-    \item $D = {0, 1, 2, 3, ..., 9}$
-    \item $Q = {0, 1, 4, 9, 25, 36, ...}$
-    \item $P = {2, 3, 5, 7, 11, ...}$
+    \item $V = \{ a, e, i, o, u\}$
+    \item $I = \{1, 3, 5, 7, 9, ...\}$
+    \item $D = \{0, 1, 2, 3, ..., 9\}$
+    \item $Q = \{0, 1, 4, 9, 25, 36, ...\}$
+    \item $P = \{2, 3, 5, 7, 11, ...\}$
 \end{enumerate}
 
 \end{frame}
@@ -440,7 +439,7 @@ $A= \{ x \vert x ~ \acute{e} ~ um ~ inteiro ~ positivo ~ par \}$
                 \item $B \subseteq  C$
                 \item $B \subseteq  A$
                 \item $B \subset  C$
-                \item $A \subsetneq  C$
+                \item $A \nsubseteq C$
                 \item $15 \in C$
                 \item $\{7, 9\} \subseteq B$
                 \item $\{7\} \subset A$
@@ -474,7 +473,7 @@ $A= \{ x \vert x ~ \acute{e} ~ um ~ inteiro ~ positivo ~ par \}$
     
 \end{frame}
 
-%19
+%20
 \begin{frame}{subconjuntos}
     \textbf{Exercício:}
     \vspace{4mm}
@@ -493,7 +492,7 @@ $A= \{ x \vert x ~ \acute{e} ~ um ~ inteiro ~ positivo ~ par \}$
             \item $\{11, 12, 13\} \subset C$
             \item $\{12\} \in B$
             \item $\{12\} \subseteq B$
-            \item $\{x | x \in \mathbb{N} ~ e ~ x < 20\} \subsetneq B$
+            \item $\{x | x \in \mathbb{N} ~ e ~ x < 20\} \nsubseteq B$
             \item $5 \subseteq A$
             \item $\{\emptyset\} \subseteq B$
             \item $\emptyset \notin A$
@@ -501,6 +500,7 @@ $A= \{ x \vert x ~ \acute{e} ~ um ~ inteiro ~ positivo ~ par \}$
     \end{multicols}
 \end{frame}
 
+%20
 \begin{frame}{subconjuntos}
     \textbf{Exercício:}
     \vspace{4mm}
@@ -583,7 +583,7 @@ Prove que $A \subset B.$
 
 %24
 \begin{frame}{subconjuntos}
-    \textbf{Partição de um Conjunto - Definição}: Uma partição de um conjunto AA é um conjunto de subconjuntos não-vazios, disjuntos entre si, cuja união é igual a A.
+    \textbf{Partição de um Conjunto - Definição}: Uma partição de um conjunto A é um conjunto de subconjuntos não-vazios, disjuntos entre si, cuja união é igual a A.
     
     \vspace{4mm}
     \textbf{Requisitos:}
@@ -599,7 +599,7 @@ Prove que $A \subset B.$
 
     \vspace{2mm}
 
-    Para $A=\{1,2,3,4\}$, uma partição possível de A é $\mathcal{P}(A) = \{\{1,2\},\{3,4\}\}\{\{1,2\},\{3,4\}\}$.
+    Para $A=\{1,2,3,4\}$, uma partição possível de A é $\mathcal{P}(A) = \{\{1,2\},\{3,4\}\}$.
         
 \end{frame}
 
@@ -610,10 +610,10 @@ Prove que $A \subset B.$
 Sobre o conjunto $A = \{1, 2, 3, 4\}$, considere as afirmativas a seguir.
 
 \begin{enumerate}
-    \item $\wp(A) = \{\emptyset, \{2, 3, 4\}\}$ é uma partição de $A$.
-    \item $\wp(A) = \{\emptyset, \{1, 2, 3\}, \{3, 4\}\}$ é uma partição de $A$.
-    \item $\wp(A) = \{\{1, 2\}, \{3, 4\}\}$ é uma partição de $A$.
-    \item $\wp(A) = \{\{1\}, \{2\}, \{3\}, \{4\}\}$ é uma partição de $A$.
+    \item $\mathcal{P}(A) = \{\emptyset, \{2, 3, 4\}\}$ é uma partição de $A$.
+    \item $\mathcal{P}(A) = \{\emptyset, \{1, 2, 3\}, \{3, 4\}\}$ é uma partição de $A$.
+    \item $\mathcal{P}(A) = \{\{1, 2\}, \{3, 4\}\}$ é uma partição de $A$.
+    \item $\mathcal{P}(A) = \{\{1\}, \{2\}, \{3\}, \{4\}\}$ é uma partição de $A$.
 \end{enumerate}
 
 \noindent
@@ -802,7 +802,7 @@ Se $S=\{1,2,3,4,5,6,7,8,9,10\}$, encontre:
 \end{figure}
 \end{frame}
 
-
+%39
 \begin{frame}{Operações em conjuntos}
     \textbf{Produto cartesiano}: Sejam A e B subconjuntos de S. O produto cartesiano de A e B, denotado por $A \times B$, é definido por
 
@@ -827,4 +827,274 @@ Se $S=\{1,2,3,4,5,6,7,8,9,10\}$, encontre:
 \end{multicols}
 
 \end{frame}
+
+%40
+\begin{frame}{Identidades básicas}
+    \textbf{Identidades básicas envolvendo conjuntos}: 
+    
+    \begin{itemize}
+        \item Existem várias igualdades entre conjuntos nas operações de união, interseção, diferença e complementação.
+        \item Essas igualdades são independentes dos subconjuntos particulares utilizados e são chamadas de identidades.
+        \begin{itemize}
+            \item Essas identidades são semelhantes às equivalências tautológicas da lógica formal.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%41
+\begin{frame}{Identidades básicas}
+    \textbf{Identidades básicas envolvendo conjuntos}: 
+
+    \begin{table}[ht]
+        \centering
+        \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{Propriedade} & \textbf{Identidade 1} & \textbf{Identidade 2} \\ \hline
+        Elementos Neutros & 
+        $ A \cup \emptyset = A $ & $ A \cap U = A $ \\ \hline
+        Dominação & 
+        $ A \cup U = U $ & $ A \cap \emptyset = \emptyset $ \\ \hline
+        Idempotentes & 
+        $ A \cup A = A $ & $ A \cap A = A $ \\ \hline
+        Complementação & 
+        $ \overline{(\overline{A})} = A $ & - \\ \hline 
+        Comutativa & 
+        $ A \cup B = B \cup A $ & $ A \cap B = B \cap A $ \\ \hline
+        Associativa & 
+        $ A \cup (B \cup C) = (A \cup B) \cup C $ & $ A \cap (B \cap C) = (A \cap B) \cap C $ \\ \hline
+        Distributiva & 
+        $ A \cap (B \cup C) = (A \cap B) \cup (A \cap C) $ & $ A \cup (B \cap C) = (A \cup B) \cap (A \cup C) $ \\ \hline
+        De Morgan & 
+        $ \overline{A \cup B} = \overline{A} \cap \overline{B} $ & $ \overline{A \cap B} = \overline{A} \cup \overline{B} $ \\ \hline
+        Absorção & 
+        $ A \cup (A \cap B) = A $ & $ A \cap (A \cup B) = A $ \\ \hline
+        \end{tabular}
+        \caption{Propriedades e Identidades}
+        \end{table}
+        
+
+\end{frame}
+
+
+\begin{frame}{Identidades Básicas}
+    \begin{itemize}
+        \item \textbf{Provando identidades:} Ex. $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$
+    \end{itemize}
+
+    Queremos então provar que:
+    \[
+    A \cup (B \cap C) \subseteq (A \cup B) \cap (A \cup C)
+    \]
+    e que
+    \[
+    (A \cup B) \cap (A \cup C) \subseteq A \cup (B \cap C)
+    \]
+
+    Podemos, então, proceder da seguinte maneira: 
+    
+    \begin{center}
+        (seja $x$ um elemento arbitrário de $A \cup (B \cap C)$):
+    \end{center}
+    
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item $x \in A \cup (B \cap C) \rightarrow x \in A$ ou $x \in (B \cap C)$
+            \item $\rightarrow x \in A$ ou $(x \in B$ e $x \in C)$
+            \item $\rightarrow (x \in A$ ou $x \in B)$ e $(x \in A$ ou $x \in C)$
+            \item $\rightarrow x \in (A \cup B)$ e $x \in (A \cup C)$
+            \item $\rightarrow x \in (A \cup B) \cap (A \cup C)$
+        \end{enumerate}
+    \end{multicols}
+    
+    
+    Para mostrarmos que $(A \cup B) \cap (A \cup C) \subseteq A \cup (B \cap C)$, basta fazer o argumento de trás para frente.
+\end{frame}
+
+%43
+\begin{frame}{Identidades Básicas}
+    Ex: Use as identidades básicas para provar que:
+
+\[
+[A \cup (B \cap C)] \cap ([\overline{A} \cup (B \cap C)] \cap \overline{(B \cap C)}) = \emptyset
+\]
+
+\begin{enumerate}
+    \item $\{[A \cup (B \cap C)] \cap (\overline{A} \cup (B \cap C))\} \cap \overline{(B \cap C)}$ \hspace{0.5cm} (associatividade)
+    \item $\{[(B \cap C) \cup A] \cap [(B \cap C) \cup \overline{A}]\} \cap \overline{(B \cap C)}$ \hspace{0.5cm} (comutatividade)
+    \item $[(B \cap C) \cup (A \cap \overline{A})] \cap \overline{(B \cap C)}$ \hspace{0.5cm} (distributividade)
+    \item $[(B \cap C) \cup \emptyset] \cap \overline{(B \cap C)}$ \hspace{0.5cm} (complemento)
+    \item $(B \cap C) \cap \overline{(B \cap C)}$ \hspace{0.5cm} (elemento neutro)
+    \item $\emptyset$ \hspace{0.5cm} (complemento)
+\end{enumerate}
+\end{frame}
+
+%44
+\begin{frame}{Identidades Básicas}
+    Ex: Use as identidades básicas para provar que:
+
+    
+\[
+    [C \cap (A \cup B)] \cup [(A \cup B) \cap \overline{C}] = (A \cup B)
+\]
+
+\pause
+
+\begin{enumerate}
+    \item $[(A \cup B) \cap C] \cup [(A \cup B) \cap \overline{C}]$ (comutatividade)
+    \item $(A \cup B) \cap (C \cup \overline{C})$ (distributividade)
+    \item $(A \cup B) \cap S$ (complemento)
+    \item $(A \cup B)$ (elemento neutro)
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Identidades Básicas}
+\begin{itemize}
+    \item A,B e C são subconjuntos de S. Demonstre a seguinte identidade usando as identidades básicas de conjuntos.
+\end{itemize}
+
+\[ [A \cap (B \cup C)] \cup ([\overline{A} \cap (B \cup C)] \cup \overline{(B \cup C)}) = S \]
+\end{frame}
+
+\begin{frame}{Identidades Básicas}
+    \textbf{Identidades envolvendo Conjuntos}
+
+    \begin{itemize}
+        \item A,B e C são subconjuntos de S. Demonstre a seguinte identidade usando as identidades básicas de conjuntos.
+    \end{itemize}
+    
+    \[ [A \cap (B \cup C)] \cup ([\overline{A} \cap (B \cup C)] \cup \overline{(B \cup C)}) = S \]
+    \end{frame}
+
+    \begin{frame}{Identidades Básicas}
+        \textbf{Identidades envolvendo Conjuntos}
+
+        \begin{itemize}
+    \item O dual de cada identidade é obtido permutando-se $\cup$
+com $\cap$ e $S$ com $\emptyset$. Por exemplo: 
+
+O dual de 
+
+    
+    \begin{center}
+        $
+        [A \cup (B \cap C)] \cap \left([\overline{A} \cup (B \cap C)] \cap \overline{(B \cap C)}\right) = \emptyset
+        $ é
+        
+        $
+        [A \cap (B \cup C)] \cup \left([\overline{A} \cap (B \cup C)] \cup \overline{(B \cup C)}\right) = S
+        $
+    \end{center}
+    
+
+
+\item Essa identidade também pode ser provada substituindo
+cada identidade básica pela sua dual.
+
+        \end{itemize}
+    \end{frame}
+
+
+\begin{frame}{Identidades Básicas}
+    \begin{itemize}
+        \item \textbf{Ex. 1} Usando as identidades básicas, prove a identidade:
+
+            \[
+            [C \cap (A \cup B)] \cup \left[(A \cup B) \cap \overline{C}\right] = A \cup B
+            \]
+
+            \begin{center}
+                (A, B e C são subconjuntos arbitrários de $S$.)
+            \end{center}
+        \item \textbf{Ex. 2} Enuncie a identidade dual do exemplo anterior.
+
+        \item \textbf{Ex. 3} Usando as identidades básicas, prove a identidade: 
+        
+        \[
+        (A \cup B) \cap (A \cup \overline{B}) = A
+        \]
+    \end{itemize}
+    \end{frame}
+
+\begin{frame}{Resumo}
+    Resumo dos métodos para provar identidades envolvendo conjuntos
+
+    \begin{table}
+        \centering
+        \begin{tabular}{|m{6cm}|m{7cm}|}
+        \hline
+        \textbf{Método} & \textbf{Comentário} \\ \hline
+        Desenhe um diagrama de venn & Não é um bom plano, já que nenhum diagrama vai cobrir todos os casos e não demonstrará a identidade no caso geral. \\ \hline
+        Prove a inclusão em cada direção & Tome um elemento arbitrário de um dos termos da identidade e mostre que ele pertence ao outro termo, e reciprocamente. \\ \hline
+        Use identidades já demonstradas & Verifique se a forma da expressão é
+        exatamente igual à forma da
+        identidade que você quer usar. \\ \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}{Conjuntos enumeráveis e não enumeráveis}
+\begin{itemize}
+    \item Um conjunto é dito contável, quando podemos contar,
+    ou enumerar, todos os seus elementos. Ser contável não
+    significa que podemos dizer qual o número total de
+    elementos do conjunto; significa que podemos dizer
+    “aqui está o primeiro elemento”, “aqui está o segundo
+    elemento”, e assim por diante.
+
+    \item \textbf{Todo conjunto finito é contável} pois podemos ordenar
+    seus elementos em uma lista como a seguinte, onde
+    cada elemento da lista representa um elemento do
+    conjunto:
+\end{itemize}
+    \[ s_1, s_2, s_3, ..., s_n\]
+
+\end{frame}
+
+\begin{frame}{Conjuntos enumeráveis e não enumeráveis}
+    \begin{itemize}
+        \item Um conjunto infinito também pode ser contável, desde
+        que tenhamos uma relação biunívoca com o números
+        naturais. Ou seja, podemos relacionar cada elemento
+        desse conjunto infinito com um elemento dos números
+        naturais.
+        \item Um conjunto é dito \textbf{enumerável}, quando for \textbf{infinito e contável}.
+    \end{itemize}
+    
+    \end{frame}
+
+\begin{frame}{Conjuntos enumeráveis e não enumeráveis}
+
+        Para verificar se um conjunto é enumerável precisamos
+organizar uma lista de seus elementos.
+    
+\vspace{2mm}
+    \textbf{Exemplos:}
+
+    Verifique que os conjuntos a seguir são enumeráveis:
+
+        \begin{enumerate}
+            \item Conjunto dos números ímpares positivos.
+            \item Conjunto dos múltiplos de 5.
+            \item Conjunto dos números naturais.
+            \item Conjuntos dos números inteiros.
+        \end{enumerate}
+        
+    \end{frame}
+
+
+    \begin{frame}{Conjuntos enumeráveis e não enumeráveis}
+
+        Os conjuntos infinitos que não podem ser enumerados
+são não-enumeráveis.
+    
+\vspace{2mm}
+    \textbf{Exemplos:}
+
+        \begin{enumerate}
+            \item O conjunto de todos os reais entre 0 e 1.
+            \item Um intervalo de números reais.
+            \item O conjunto dos números reais.
+        \end{enumerate}
+        
+    \end{frame}
 \end{document}
