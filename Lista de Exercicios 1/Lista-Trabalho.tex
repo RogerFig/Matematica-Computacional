@@ -1,0 +1,189 @@
+\documentclass[a4paper, 12pt, addpoints]{exam}
+\usepackage{IfbaListas}
+%==============================================================
+\NumList{3 - Recuperar} %NÚMERO DA LISTA
+\Assunto{Lógica}
+%==============================================================
+\input{InfGerais} %CARREGA AS INFORMAÇÕES GERAIS DO PROFESSOR, ESCOLA ETC
+%==============================================================
+
+%COMEÇO DO DOCUMENTO
+\begin{document}
+\info\vspace{-1 cm} %Imprime as informações do cabeçalho programada no pacote 
+% inicia a gravacao da resposta no arquivo "ans" cujo nome externo é gabarito 
+\Opensolutionfile{ans}[Gabarito]
+%*****************************************************************************
+\begin{questions}%COMEÇA O AMBIENTE DE QUESTÕES
+  \question Seja $\oplus $ o operador ``xor'' (``Exclusive Or'') definido como $P \oplus Q := (P \leftrightarrow Q)'$, onde P, Q, R e S são proposições lógicas quaisquer. Usando a tabela verdade, prove que:
+  \begin{enumerate}[a)]
+    \item $(P \oplus Q) \Leftrightarrow (P \lor Q) \land (P' \lor Q')$
+    \item $P \oplus (Q \oplus R) \Leftrightarrow (P \oplus Q) \oplus R$
+    \item $(P \oplus Q) \land (R \oplus S) \Leftrightarrow (P \land R) \oplus (P \land S) \oplus (Q \land R) \oplus (Q \land S)$
+    
+  \end{enumerate}
+  
+   \begin{resp}~
+    
+  \end{resp}
+
+  \question Prove que o operador condicional ($\rightarrow$) é distributivo com todos operadores ($\land, \lor, \rightarrow, \leftrightarrow$). Ou seja, prove os seguintes itens, onde P , Q e R são sentenças lógicas quaisquer:
+
+  \begin{multicols}{2}
+    \begin{enumerate}
+      \item $(P \rightarrow Q') \lor P'$
+      \item $(P \lor (Q \oplus R)) \leftrightarrow ((P \lor Q) \oplus (P \lor R))$
+      \item $(P \lor Q') \rightarrow Q'$
+      \item $(P \rightarrow (Q \rightarrow R)) \leftrightarrow ((P \rightarrow Q) \rightarrow R)$
+      \item $P \leftrightarrow (P' \lor Q')$
+      \item $(P \rightarrow (Q \oplus R)) \leftrightarrow ((P \rightarrow Q) \oplus (P \rightarrow R))$
+    \end{enumerate}
+  \end{multicols}
+
+  \question Considerando as oito sentenças abaixo e assumindo que não há contradição entre elas, descubra o valor lógico (\textbf{V} ou \textbf{F}) de cada sentença. Justifique.
+  
+    \begin{itemize}
+      \item Sentença $\bigtriangleup_1$: Exatamente sete das sentenças desta questão são falsas.
+      \item Sentença $\bigtriangleup_2$: Exatamente seis das sentenças desta questão são falsas.
+      \item Sentença $\bigtriangleup_3$: Exatamente cinco das sentenças desta questão são falsas.
+      \item Sentença $\bigtriangleup_4$: Existem oito sentenças nesta questão.
+      \item Sentença $\square_1$: A Sentença $\bigtriangleup_1$ é falsa.
+      \item Sentença $\square_2$: A Sentença $\bigtriangleup_2$ é falsa.
+      \item Sentença $\square_3$: A Sentença $\square_4$ é verdadeira.
+      \item Sentença $\square_4$: A Sentença $\square_4$ é verdadeira.
+    \end{itemize}
+  
+
+  \begin{resp}~
+    
+  \end{resp}
+
+  \question  Considerando as quatro sentenças abaixo, a última sentença é verdadeira? Justifique.
+
+  \begin{itemize}
+    \item Existem quatro sentenças nesta questão.
+    \item Três das sentenças desta questão são falsas.
+    \item A última sentença é verdadeira.
+    \item Esta lista de exercícios está muito fácil.
+  \end{itemize}
+  
+
+
+  \begin{resp}~
+  
+  \end{resp}
+
+  \question  Usando as regras da lógica proposicional, prove cada argumento abaixo, usando as letras de proposição dadas:
+  
+  \begin{itemize}
+    \item Se o programa é eficiente, executa rapidamente: ou o programa é eficiente ou tem algum bug. No entanto, o programa não executa rapidamente. Logo, ele tem um bug. E, R, B.
+    \item Se Jane é a mais popular, ela será eleita. Se Jane é a mais popular, então Carlos vai renunciar. Portanto, se Jane é a mais popular, ela será eleita e Carlos renunciará. J, E, C
+    \item Rússia era uma potência superior, e a França não era suficientemente poderosa ou Napoleão fez um erro. Napoleão não fez um erro, mas, se o exército não perdeu, então a França era poderosa. Portanto, o exército perdeu e a Rússia era uma potência superior. R, F, N, A (exército)
+    \item Se José tivesse levado as joias ou se a Sra. Krasov tivesse mentido, então um crime teria sido cometido. O Sr. Krasov não estava na cidade. Se um crime tivesse sido cometido, então o Sr. Krasov estaria na cidade. Portanto, José não levou as joias. J, L (mentir), C, T (cidade)
+    \item Emília não estava em casa ou, se Patrícia não tivesse entregado os tomates, então Sofia estaria doente. Além disso, se Emília não estivesse em casa, então Olívia teria entregado as pimentas. Mas não é verdade que Sofia estivesse doente ou que Olívia tivesse entregado as pimentas. Portanto, Patrícia deixou os tomates e Olívia não entregou as pimentas. E, P, S, O
+  \end{itemize}
+  
+
+  \begin{resp}~
+ 
+  \end{resp}
+
+  \question Usando os símbolos predicados indicados e quantificadores apropriados, escreva cada declaração em português como uma fbf predicada. (O conjunto universo é o mundo inteiro).
+
+  \begin{itemize}
+    \item $D(x)$: x é um dia.
+    \item $S(x)$: x é ensolarado.
+    \item $C(x)$: x é chuvoso.
+  \end{itemize}
+
+  \begin{enumerate}
+    \item Todos os dias são ensolarados.
+    \item Alguns dias são chuvosos.
+    \item Todo dia ensolarado não é chuvoso.
+    \item Alguns são ensolarados e chuvosos.
+    \item Nenhum dia é ensolarado e chuvoso ao mesmo tempo.
+  \end{enumerate}
+  \begin{resp}~
+
+    \begin{enumerate}[a)]
+      \item $(\forall x)P(x) \rightarrow (\forall x)[P(x) \lor Q(x)]$
+            \begin{multicols}{2}
+
+              \begin{enumerate}[1.]
+                \item $(\forall x)P(x)$
+                \item $P(x)$
+                \item $P(x) \lor Q(x)$
+                \item $\boldsymbol{(\forall x)[P(x) \lor Q(x)]}$
+              \end{enumerate}
+
+              \columnbreak
+
+              \begin{enumerate}[\ding{32}]
+                \item (hip)
+                \item (1, pu)
+                \item (2, ad)
+                \item \textbf{(3, gu)}
+              \end{enumerate}
+
+            \end{multicols}
+
+      \item $(\exists x)(\exists y)P(x, y) \rightarrow (\exists y)(\exists x)P(x, y)$
+            \begin{multicols}{2}
+
+              \begin{enumerate}[1.]
+                \item $(\exists x)(\exists y)P(x, y)$
+                \item $(\exists y)P(a,y)$
+                \item $P(a,b)$
+                \item $(\exists x)P(x,b)$
+                \item $\boldsymbol{(\exists y)(\exists x)P(x, y)}$
+              \end{enumerate}
+
+              \columnbreak
+
+              \begin{enumerate}[\ding{32}]
+                \item (hip)
+                \item (1, pe)
+                \item (2, pe)
+                \item (3, ge)
+                \item \textbf{(4, ge)}
+              \end{enumerate}
+
+            \end{multicols}
+
+      \item $(\forall x)P(x) \land (\exists x)[P(x)]' \rightarrow (\exists x)Q(x)$
+            \begin{multicols}{2}
+
+              \begin{enumerate}[1.]
+                \item $(\forall x)P(x)$
+                \item $(\exists x)[P(x)]'$
+                \item $[P(a)]'$
+                \item $P(a)$
+                \item $Q(a)$
+                \item $\boldsymbol{(\exists x)Q(x)}$
+              \end{enumerate}
+
+              \columnbreak
+
+              \begin{enumerate}[\ding{32}]
+                \item (hip)
+                \item (hip)
+                \item (2, pe)
+                \item (1, pu)
+                \item (3, 4, inc)
+                \item \textbf{(5, ge)}
+              \end{enumerate}
+
+            \end{multicols}
+    \end{enumerate}
+  \end{resp}
+
+\end{questions}
+
+\newpage
+
+\vspace{1cm}
+\begin{center}
+  \section*{Gabarito}
+\end{center}
+\Closesolutionfile{ans}% finaliza a gravação das respostas
+\input{Gabarito} %imprime as soluções
+\end{document}
